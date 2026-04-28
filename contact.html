@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ganesh Machinery Stores</title>
+    <meta name="description"
+        content="Contact Ganesh Machinery Stores for all your machinery, water pump, and agricultural equipment needs.">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 75, 135, 0.9), rgba(0, 75, 135, 0.9)), url('https://images.unsplash.com/photo-1542744094-24638ea0b3b5?auto=format&fit=crop&w=1920&q=80') center/cover;
+            padding: 6rem 0 4rem;
+            text-align: center;
+            color: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 2rem;
+        }
+
+        /* Clear and Easy to Use Contact Info Box */
+        .contact-info-block {
+            background: var(--bg-light);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--primary);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .info-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+            background: white;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: var(--shadow);
+            flex-shrink: 0;
+        }
+
+        .info-content h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .info-content p {
+            color: var(--text-dark);
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .whatsapp-btn {
+            background-color: #25D366;
+            /* WhatsApp Green */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 1.2rem;
+            padding: 1rem;
+            margin-top: 2rem;
+            width: 100%;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #1ebe5d;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        /* Map Section styled as a clean card */
+        .map-section {
+            margin-top: 4rem;
+        }
+
+        .map-card {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 4px solid white;
+        }
+
+        .map-iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+            background: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: var(--text-light);
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-info-block,
+            .contact-form {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-gears logo-icon"></i>
+                <span>Ganesh Machinery</span>
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 style="animation: none; margin-bottom: 0;">Let's Work Together</h1>
+            <p style="margin-top: 1rem; opacity: 0.9;">Have questions about our machinery or motors? Reach out to us
+                directly!</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-container">
+
+                <!-- Contact Info Area (Clear and easy) -->
+                <div class="contact-info-block">
+                    <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Contact Information</h3>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-content">
+                            <h4>Shop Address</h4>
+                            <p>Main Road, Near old bus stand,</p>
+                            <p>Majalgaon, Beed-431122</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-content">
+                            <h4>Direct Phone</h4>
+                            <p>+91 9420874383</p>
+                        </div>
+                    </div>
+
+                    <!-- Direct WhatsApp Button -->
+                    <a href="https://wa.me/919420874383" target="_blank" class="btn whatsapp-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Send an Enquiry</h3>
+
+                    <form onsubmit="sendToWhatsApp(); return false;">
+
+                        <div class="form-group">
+                            <label class="form-label" for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="E.g. John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="+91 XXXXX XXXXX" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="message">What do you need help with?</label>
+                            <textarea id="message" class="form-control" rows="5"
+                                placeholder="I am looking for a Suguna motor..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary"
+                            style="width: 100%; font-size: 1.1rem; padding: 1rem;">
+                            Send Message
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+
+
+            <!-- Locate Us Section -->
+            <div class="map-section">
+                <h3 style="margin-bottom: 1.5rem; text-align: center;">Locate Us</h3>
+
+                <div class="map-card">
+                    <div class="map-iframe">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.8929876484685!2d76.2108664!3d19.156161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdab123020abf79%3A0xca7cc04c444ae286!2sGANESH%20MACHINERY%20STORES!5e0!3m2!1sen!2sin!4v1777406348553!5m2!1sen!2sin"
+                            width="100%" height="350" style="border:0; border-radius:10px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Ganesh Machinery</h3>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Delivering excellence and reliability in
+                        machinery, pumps, and agricultural supplies. Your success is our guarantee.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links" style="color: rgba(255,255,255,0.8);">
+                        <li style="display: flex; gap: 10px; align-items: center;"><i
+                                class="fa-solid fa-location-dot"></i> Main Road, Near old bus stand, Majalgaon,
+                            Beed-431122</li>
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="fa-solid fa-phone"></i> +91
+                            9420874383</li>
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="fa-solid fa-envelope"></i>
+                            ganeshmachinery@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ganesh Machinery Stores. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919420874383" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

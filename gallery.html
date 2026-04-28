@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Ganesh Machinery Stores</title>
+    <meta name="description" content="View our gallery of machinery, equipment, product photos, and store operations.">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 75, 135, 0.9), rgba(0, 75, 135, 0.9)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1920&q=80') center/cover;
+            padding: 6rem 0 4rem;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive Grid Layout */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            border: 2px solid var(--border-color);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        /* Hover Effects */
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 75, 135, 0.85);
+            /* Deep Blue Overlay */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.1);
+            /* Zoom effect */
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+            /* Fade in overlay */
+        }
+
+        .gallery-icon {
+            color: white;
+            font-size: 2rem;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-text {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transform: translateY(20px);
+            transition: transform 0.3s ease 0.1s;
+        }
+
+        .gallery-item:hover .gallery-icon,
+        .gallery-item:hover .gallery-text {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-gears logo-icon"></i>
+                <span>Ganesh Machinery</span>
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 style="animation: none; margin-bottom: 0;">Our Gallery</h1>
+            <p style="margin-top: 1rem; opacity: 0.9;">Take a look at our vast inventory, store operations, and product
+                photos.</p>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <h2>Shop & Products Showcase</h2>
+                <p>Browse through photos of our actual store, warehouse, and featured product unboxings.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Shop Image 1 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581092334241-118c7ed6778f?auto=format&fit=crop&w=800&q=80"
+                        alt="Inside Our Store" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-store gallery-icon"></i>
+                        <span class="gallery-text">Inside Our Store</span>
+                    </div>
+                </div>
+
+                <!-- Product Photo 1: Motor -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1540324155974-7523202daa3f?auto=format&fit=crop&w=800&q=80"
+                        alt="Suguna Electric Motor" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-plug gallery-icon"></i>
+                        <span class="gallery-text">Suguna Electric Motor</span>
+                    </div>
+                </div>
+
+                <!-- Product Photo 2: Agricultural -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1592982537447-6f2c6e0a2f8b?auto=format&fit=crop&w=800&q=80"
+                        alt="Agricultural Equipment" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-tractor gallery-icon"></i>
+                        <span class="gallery-text">Tractors & Tillers</span>
+                    </div>
+                </div>
+
+                <!-- Shop Image 2: Workshop -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+                        alt="Our Workshop Area" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-wrench gallery-icon"></i>
+                        <span class="gallery-text">Our Workshop Area</span>
+                    </div>
+                </div>
+
+                <!-- Product Photo 3: Pump -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1607427293702-036933bbf746?auto=format&fit=crop&w=800&q=80"
+                        alt="Submersible Pumps" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-water gallery-icon"></i>
+                        <span class="gallery-text">Water Pumps Inventory</span>
+                    </div>
+                </div>
+
+                <!-- Product Photo 4: Spare Parts -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80"
+                        alt="Spare Parts Aisle" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-cogs gallery-icon"></i>
+                        <span class="gallery-text">Spare Parts Aisle</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Ganesh Machinery</h3>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Delivering excellence and reliability in
+                        machinery, pumps, and agricultural supplies. Your success is our guarantee.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links" style="color: rgba(255,255,255,0.8);">
+                        <li style="display: flex; gap: 10px; align-items: center;"><i
+                                class="fa-solid fa-location-dot"></i> Main Road, Near old bus stand, Majalgaon,
+                            Beed-431122</li>
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="fa-solid fa-phone"></i> +91
+                            9420874383</li>
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="fa-solid fa-envelope"></i>
+                            ganeshmachinery@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ganesh Machinery Stores. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919420874383" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

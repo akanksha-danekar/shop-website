@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Ganesh Machinery Stores</title>
+    <meta name="description" content="Learn more about Ganesh Machinery Stores, our history, and our values.">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 75, 135, 0.9), rgba(0, 75, 135, 0.9)), url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1920&q=80') center/cover;
+            padding: 6rem 0 4rem;
+            text-align: center;
+            color: white;
+        }
+
+        .about-content {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-image {
+            flex: 1;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .feature-list {
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-icon {
+            color: var(--primary);
+            font-size: 1.5rem;
+            background: var(--accent);
+            padding: 1rem;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-gears logo-icon"></i>
+                <span>Ganesh Machinery</span>
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 style="animation: none; margin-bottom: 0;">About Us</h1>
+            <p style="margin-top: 1rem; opacity: 0.9;">Building Trust Through Quality Machinery</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 style="text-align: left;">Who We Are</h2>
+                    <p>Welcome to <strong>Ganesh Machinery Stores</strong>. Established with a vision to revolutionize
+                        the availability of high-quality machinery, we have grown into a leading supplier of
+                        agricultural equipment, industrial machinery, and water pumps in the region.</p>
+                    <p>We take pride in our association with top brands, specializing as an authorized dealer for
+                        <strong>Suguna Motors</strong>. Our commitment extends beyond sales — we believe in offering
+                        comprehensive solutions that guarantee efficiency and longevity.</p>
+
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-award feature-icon"></i>
+                            <div>
+                                <h3>Quality Assurance</h3>
+                                <p style="color: var(--text-light);">We supply only authentic, tested, and reliable
+                                    machinery built to last under tough conditions.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-handshake feature-icon"></i>
+                            <div>
+                                <h3>Customer First</h3>
+                                <p style="color: var(--text-light);">Our trained experts ensure you get the right
+                                    product tailored exactly to your specific needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1581092334241-118c7ed6778f?auto=format&fit=crop&w=800&q=80"
+                        alt="Our Team / Store">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Ganesh Machinery</h3>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Delivering excellence and reliability in
+                        machinery, pumps, and agricultural supplies. Your success is our guarantee.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links" style="color: rgba(255,255,255,0.8);">
+                        <li style="display: flex; gap: 10px; align-items: center;"><i
+                                class="fa-solid fa-location-dot"></i> Main Road, Near old bus stand, Majalgaon,
+                            Beed-431122</li>
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="fa-solid fa-phone"></i> +91
+                            9420874383</li>
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="fa-solid fa-envelope"></i>
+                            ganeshmachinery@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ganesh Machinery Stores. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919420874383" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
